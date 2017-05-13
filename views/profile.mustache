@@ -1,0 +1,14 @@
+{{>header}}
+
+<h1>User Profile</h1>
+<p>Hello {{ username }}</p>
+<p>You like:</p>
+<ul>
+	{{#hobbies}}
+		<li>
+			{{.}}
+		</li>
+	{{/hobbies}}
+</ul>
+
+{{>footer}}
